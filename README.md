@@ -66,7 +66,7 @@ Quem fez esse produto sair do campo da ideia e ser codado :)
 
 <table>
   <tr>
-    <td align="center"><a href="meu site vem aqui"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/42811079?s=40&v=4" width="100px;" alt=""/><br /><sub><b>Ricardo Froeseler</b></sub></a><br /><a href="meu site vem aqui" title="RicardoFroeseler">👨‍🚀</a></td>
+    <td align="center"><a href="meu site vem aqui"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/42811079?v=4" width="100px;" alt=""/><br /><sub><b>Ricardo Froeseler</b></sub></a><br /><a href="meu site vem aqui" title="RicardoFroeseler">👨‍🚀</a></td>
   </tr>
 </table>
 
