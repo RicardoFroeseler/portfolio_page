@@ -11,8 +11,9 @@
 ## 💻 Sobre o projeto
 
 💻 Portfólio — é uma forma de conectar empresas e pessoas aos meus projetos e demonstrar meu conhecimento em diversas habilidades utilizadas nos desenvolvimentos dos meus projetos além também de divulgar outros conteúdos como meu Instagram e vídeos que disponibilizo no meu canal do YouTube.
+ - O projeto foi desenvolvido para apresentar de forma mais harmônica todos os projetos que desenvolvi de forma pessoal ou profissional aqui posso mostrar todo meu processo da ideia até o desenvolvimento e resultado também utilizo de um ‘design’ mais minimalista para uma melhor visualização de todo conteúdo apresentado.
 
-Projeto desenvolvido para apresentar de forma mais armonica todos os projetos que desenvolvi de forma pessoal ou profissional utilizo de um ‘design’ mais minimalista para uma melhor visualização de todo conteúdo apresentado.
+
 ---
 
 ## 🎨 Layout
