@@ -18,7 +18,7 @@
 - Desenvolvido primeiro com a metodologia Mobile First, depois para desktop.
 - Compatível com todos os dispositivos móveis e com uma bela e agradável interface de usuário.
 
-![preview img](/img/Preview/PROJETO_PORTFOLIO.jpg)
+![preview img]
 
 
 ---
