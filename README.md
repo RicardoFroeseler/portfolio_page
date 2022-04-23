@@ -39,7 +39,7 @@ O layout da aplicação está disponível no Figma e tambem em um post no behanc
 </a>
 
 ### Resultado final site publicado pelo GitHub Pages
-https://ricardofroeseler.github.io/portfolio_page/
+<a href="https://ricardofroeseler.github.io/portfolio_page/" target="_blank">Confira Aqui!!!</a>
 <br />
 <br />
 <br />
