@@ -5,8 +5,8 @@
 ![](https://img.shields.io/badge/%20Situation-Completed-brightgreen)<br>
 ![GitHub](https://img.shields.io/github/license/RicardoFroeseler/portfolio_page)<br>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/RicardoFroeseler/Sistema_Doacao)<br>
-![GitHub language count](https://img.shields.io/github/languages/count/RicardoFroeseler/Sistema_Doacao)<br>
+![GitHub repo size](https://img.shields.io/github/repo-size/RicardoFroeseler/portfolio_page)<br>
+![GitHub language count](https://img.shields.io/github/languages/count/RicardoFroeseler/portfolio_page)<br>
 
 ## 💻 Sobre o projeto
 
