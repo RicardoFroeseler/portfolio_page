@@ -39,10 +39,10 @@ O layout da aplicação está disponível no Figma e tambem em um post no behanc
 </a>
 
 ### Resultado final site publicado pelo GitHub Pages
-<p align="left" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
-</p>
-
+https://ricardofroeseler.github.io/portfolio_page/
+<br />
+<br />
+<br />
 ---
 
 ## 🛠 Tecnologias
