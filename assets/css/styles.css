@@ -18,7 +18,9 @@ e a porcentagem da variavel
     --sat: 100%;
     --lig: 64%;
 
-    --first-color: hsl(var(--hue), var(--sat), var(--lig));
+    --first-color: #7359f8;
+    --second-color: #22212c;
+    
     --first-color-alt: hsl(var(--hue), var(--sat), 60%);
     --title-color: hsl(var(--hue), 12%, 15%);
     --text-color: hsl(var(--hue), 12%, 45%);
@@ -80,11 +82,25 @@ img{
 }
 
 /* THEME */
+.theme_box {
+    position: fixed; /* Define o posicionamento fixo para os ícones */
+    top: 0; /* Coloca os ícones no topo da tela */
+    right: 0; /* Coloca os ícones no canto superior direito */
+    display: flex; /* Adiciona display flex para alinhar os ícones horizontalmente */
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Adiciona um padding para dar espaço aos ícones */
+}
 
-.change-theme{
-    position: absolute;
-    top: 1.5rem;
-    right: 0;
+.change-theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 0.5rem; /* Adiciona margem direita para separar os ícones */
+}
+
+.change-theme2 {
     font-size: 1.25rem;
     color: var(--title-color);
     cursor: pointer;
@@ -97,11 +113,13 @@ img{
 
 /* DARK THEME */
 
+
+
 body.dark-theme{
     --title-color: hsl(var(--hue), 12%, 95%);
     --text-color: hsl(var(--hue), 12%, 75%);
-    --body-color: hsl(var(--hue), 40%, 8%);
-    --container-color: hsl(var(--hue), 24%, 12%);
+    --body-color: #22212c;
+    --container-color: #7359f8;
 }
 
 /* Color change in some parts of the website, in light theme*/
@@ -111,7 +129,7 @@ body.dark-theme{
 }
 
 .dark-theme .button__gray:hover{
-    background-color: hsl(var(--hue), 24%, 16%);
+    background-color: #302c45;
     
 }
 
@@ -121,15 +139,15 @@ body.dark-theme{
 }
 
 .dark-theme::-webkit-scrollbar{
-    background-color: hsl(var(--hue), 8%, 16%);
+    background-color:#2b2640 ;
 }
 
 .dark-theme::-webkit-scrollbar-thumb{
-    background-color: hsl(var(--hue), 8%, 24%);
+    background-color: #7359f8 ;
 }
 
 .dark-theme::-webkit-scrollbar-thumb:hover{
-    background-color: hsl(var(--hue), 8%, 32%);
+    background-color:#302c45;
 }
 
 
@@ -171,7 +189,7 @@ body.dark-theme{
     align-items: flex-end;
     justify-content: center;
 
-    border: 3px solid rgb(16, 111, 134);
+    border: 3px solid var(--first-color);
 }
 
 .profile__border{
@@ -251,23 +269,52 @@ body.dark-theme{
     display: inline-flex;
     align-items: center;
     column-gap: .5rem;
-    background-color: var(--first-color);
+    background-color: #7359f8;
     color: #fff;
     padding: 1.15rem 1.5rem;
     border-radius: .5rem;
     transition: .3s;
-    box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
+    box-shadow: 0px 15px 50px -10px rgba(115,89,248,0.8);
+    
+}
+
+.button_shop{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: #59f87c;
+    color: #fff;
+    padding: 1.15rem 1.5rem;
+    border-radius: .5rem;
+    transition: .3s;
+    box-shadow: 0px 15px 50px -10px rgba(108, 214, 140, 0.8);
+    
 }
 
 .button i{
     font-size: 1.25rem;
 }
 
+.button_shop i{
+    font-size: 1.25rem;
+}
+
 .button:hover{
-    background-color: var(--first-color-alt);
+    background-color: var(--second-color);
+    border: 1px solid #7359f8;
+}
+
+.button_shop:hover{
+    background-color: var(--second-color);
+    border: 1px solid #7359f8;
 }
 
 .button__small{
+    padding: .75rem;
+    box-shadow: none;
+}
+
+.button__small_shop{
     padding: .75rem;
     box-shadow: none;
 }
@@ -279,19 +326,22 @@ body.dark-theme{
 
 .button__gray:hover{
     background-color: var(--text-color-light);
+    border: 1px solid #7359f8;
 }
 
 /* FILTER TABS */
-.filters__content{
+.filters__content {
     margin: 2rem 0 2.5rem;
     background-color: var(--text-color-lighten);
     padding: .375rem;
     border-radius: .75rem;
     display: flex;
     justify-content: space-between;
-    column-gap: .5rem;
-    
+    column-gap: .1rem;
+    box-shadow: 0px 15px 50px -10px rgba(115, 89, 248, 0.8);
+    box-sizing: border-box; /* Adiciona box-sizing: border-box para incluir padding e borda na largura total */
 }
+
 
 .filters__button{
     width: 100%;
@@ -310,6 +360,27 @@ body.dark-theme{
 
 .filters__button:hover{
     background-color: var(--body-color);
+}
+
+/* Cabecalho e elementos faq */
+
+.Cabecalho {
+    
+    
+    background-color: var(--first-color);
+    padding: .375rem;
+    border-radius: .75rem .75rem 0rem 0rem;
+    display: flex;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    box-shadow: 0px 15px 50px -10px rgba(115, 89, 248, 0.8);
+    text-align: center;
+}
+
+.text_faq{
+    border: 1px solid var(--first-color);
+    padding: 1.375rem;
+    border-radius: 0rem 0rem .75rem .75rem ;
 }
 
 /* PROJECTS */
@@ -331,9 +402,9 @@ body.dark-theme{
     height: 100%;
     bottom: -100%;
     left: 0;
-    background: linear-gradient(180deg,
-    hsla(var(--hue), 24%, 40%, .3) 0%,
-    hsla(var(--hue), 24%, 4%, 1) 95%);
+
+    background: linear-gradient(0deg, rgba(48,44,69,1) 0%, rgba(115,89,248,0.8407738095238095) 100%);
+
     display: grid;
     align-items: flex-end;
     padding: 1.5rem 1.25rem;
@@ -356,6 +427,10 @@ body.dark-theme{
 }
 
 .projects__button{
+    padding: .5rem;
+}
+
+.projects__button_shop{
     padding: .5rem;
 }
 
@@ -394,7 +469,7 @@ body.dark-theme{
 
 .skills__data i{
     font-size: 1rem;
-    color: var(--first-color);
+    color: #7359f8;
 }
 
 .skills__name{
@@ -476,7 +551,7 @@ body.dark-theme{
         justify-content: center;
     }
     .filters__content{
-        width: 332px;
+        width: auto;
         margin: 3rem auto;
     }
 }
