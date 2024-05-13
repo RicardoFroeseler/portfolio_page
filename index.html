@@ -8,7 +8,7 @@
     <!-- REMIX ICONS -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- TITLE -->
     <title>Portfolio website - Ricardo Froeseler</title>
 </head>
@@ -16,20 +16,27 @@
         <!---->
         <header class="profile container">
             <!-- theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            <div class="theme_box">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <a href="styledoc.html"><i class="ri-article-line change-theme2" id="theme-button"></i></a>
+            </div>
+            
+                
+            
 
             <div class="profile__container grid">
                 <div class="profile__data">
+                    <!-- minha foto -->
                     <div class="profile__border">
                         <div class="profile__perfil">
-                            <img src="assets/img/perfil.jpg" alt="">
+                            <img src="./assets/img/perfil.jpg" alt="">
                         </div>
                     </div>
-
+                    <!-- nome e titulo -->
                     <h2 class="profile__name">Ricardo Froeseler</h2>
                     <h3 class="profile__profession">Front End Developer</h3>
 
-
+                    <!-- icones sociais -->
                     <ul class="profile__social">
                         <a href="https://www.instagram.com/ricardo_froeseler/" target="_blank" class="profile__social-link">
                         <!--instagram-->    
@@ -53,7 +60,7 @@
                         </a>
                     </ul>
                 </div>
-
+                <!-- informacoes abaixo dos icones sociais -->
                 <div class="profile__info grid">
                     <div class="profile__info-group">
                         <h3 class="profile__info-number">2</h3>
@@ -74,10 +81,10 @@
                         </p>
                     </div>
                 </div>
-
+                <!-- botoes de acao -->
                 <div class="profile__buttons">
-                    <a download="" href="/assets/pdf/Profile.pdf" class="button">
-                        Curriculo <i class="ri-download-cloud-line"></i>
+                    <a download="" href="./assets/pdf/Profile.pdf" class="button">
+                        Curriculum <i class="ri-download-cloud-line"></i>
                     </a>
                     <div class="profile__buttons-small">
                         <a href="https://contate.me/RicardoFroesele" target="_blank" class="button button_small button__gray">
@@ -97,7 +104,11 @@
             <section class="filters container">
                 <!--Filters tabs-->
                 <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
+                    <button class="filters__button filter-tab-active" data-target="#faq">
+                        <!--Sobre-->
+                        Sobre
+                    </button>
+                    <button class="filters__button" data-target="#projects">
                         <!--Projects-->
                         Projects
                     </button>
@@ -105,15 +116,15 @@
                         <!--Skills-->
                         Skills
                     </button>
-                    <button class="filters__button" data-target="#youtube">
+                    <button class="filters__button" data-target="#shop">
                         <!--Youtube-->
-                        Youtube
+                        shop
                     </button>
                 </ul>
 
                 <div class="filters__sections">
                     <!--projects-->
-                        <div class="projects__content grid filters__active" data-content id="projects">
+                        <div class="projects__content grid" data-content id="projects">
                             <!-- estrutura para o artigo -->
                             <!--
                                 <article class="projects__card">
@@ -135,12 +146,12 @@
                             -->
                             <!--artigo 1-->
                             <article class="projects__card">
-                                <img src="assets/img/Projetos/Portfolio WEB minimalista/PROJETO_PORTFOLIO.jpg" alt="" class="projects__img">
+                                <img src="./assets/img/Projetos/Portfolio WEB minimalista/PROJETO_PORTFOLIO.jpg" alt="" class="projects__img">
 
                                 <div class="projects__modal">
                                     <div>
                                         <span class="projects__subtitle">Web</span>
-                                        <h3 class="projects__title">Portfolio</h3>
+                                        <h3 class="projects__title">Imobiliaria</h3>
                                         <a href="#" class="projects__button button button__small">
                                             <i class="ri-link"></i>
                                         </a>
@@ -150,12 +161,16 @@
                                         <a href="#" class="projects__button button button__small">
                                             <i class="ri-behance-line"></i>
                                         </a>
+                                        <a href="#" class="projects__button button_shop button__small">
+                                            <i class="ri-shopping-cart-2-fill"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </article>
+                            <!-- final do artigo 1-->
                             <!--artigo 2-->
                             <article class="projects__card">
-                                <img src="assets/img/padrao.jpg" alt="" class="projects__img">
+                                <img src="./assets/img/padrao.jpg" alt="" class="projects__img">
 
                                 <div class="projects__modal">
                                     <div>
@@ -170,74 +185,7 @@
                                     </div>
                                 </div>
                             </article>
-                            <!--artigo 3-->
-                            <article class="projects__card">
-                                <img src="assets/img/padrao.jpg" alt="" class="projects__img">
-
-                                <div class="projects__modal">
-                                    <div>
-                                        <span class="projects__subtitle">Web</span>
-                                        <h3 class="projects__title">imove</h3>
-                                        <a href="#" class="projects__button button button__small">
-                                            <i class="ri-link"></i>
-                                        </a>
-                                        <a href="#" class="projects__button button button__small">
-                                            <i class="ri-behance-line"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!--artigo 4-->
-                            <article class="projects__card">
-                                <img src="assets/img/padrao.jpg" alt="" class="projects__img">
-
-                                <div class="projects__modal">
-                                    <div>
-                                        <span class="projects__subtitle">Web</span>
-                                        <h3 class="projects__title">imove</h3>
-                                        <a href="#" class="projects__button button button__small">
-                                            <i class="ri-link"></i>
-                                        </a>
-                                        <a href="#" class="projects__button button button__small">
-                                            <i class="ri-behance-line"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!--artigo 5-->
-                            <article class="projects__card">
-                                <img src="assets/img/padrao.jpg" alt="" class="projects__img">
-
-                                <div class="projects__modal">
-                                    <div>
-                                        <span class="projects__subtitle">Web</span>
-                                        <h3 class="projects__title">imove</h3>
-                                        <a href="#" class="projects__button button button__small">
-                                            <i class="ri-link"></i>
-                                        </a>
-                                        <a href="#" class="projects__button button button__small">
-                                            <i class="ri-behance-line"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!--artigo 6-->
-                            <article class="projects__card">
-                                <img src="assets/img/padrao.jpg" alt="" class="projects__img">
-
-                                <div class="projects__modal">
-                                    <div>
-                                        <span class="projects__subtitle">Web</span>
-                                        <h3 class="projects__title">imove</h3>
-                                        <a href="#" class="projects__button button button__small">
-                                            <i class="ri-link"></i>
-                                        </a>
-                                        <a href="#" class="projects__button button button__small">
-                                            <i class="ri-behance-line"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
+                            <!-- final do artigo 2-->
                         </div>
                     <!--skills-->
                         <div class="skills__content grid" data-content id="skills">
@@ -255,7 +203,7 @@
 
                                             <div>
                                                 <h3 class="skills_name">HTML</h3>
-                                                <span class="skills__level">Intermediary</span>
+                                                <span class="skills__level">Basic</span>
                                             </div>
                                             
                                         </div>
@@ -264,7 +212,7 @@
 
                                             <div>
                                                 <h3 class="skills_name">CSS</h3>
-                                                <span class="skills__level">Intermediary</span>
+                                                <span class="skills__level">Basic</span>
                                             </div>
                                             
                                         </div>
@@ -273,20 +221,20 @@
 
                                             <div>
                                                 <h3 class="skills_name">JavaScript</h3>
-                                                <span class="skills__level">Intermediary</span>
+                                                <span class="skills__level">Basic</span>
                                             </div>
                                             
                                         </div>
 
                                     </div>
-                                     <!-- skill 1 group 2 -->
+                                     <!-- skill group 2 -->
                                     <div class="skills__group">
 
                                         <div class="skills__data">
                                             <i class="ri-checkbox-circle-line"></i>
 
                                             <div>
-                                                <h3 class="skills_name">Flutter</h3>
+                                                <h3 class="skills_name">HTML</h3>
                                                 <span class="skills__level">Basic</span>
                                             </div>
                                             
@@ -295,12 +243,11 @@
                                             <i class="ri-checkbox-circle-line"></i>
 
                                             <div>
-                                                <h3 class="skills_name">React</h3>
-                                                <span class="skills__level">Beginner</span>
+                                                <h3 class="skills_name">CSS</h3>
+                                                <span class="skills__level">Basic</span>
                                             </div>
                                             
                                         </div>
-                                        <!--
                                         <div class="skills__data">
                                             <i class="ri-checkbox-circle-line"></i>
 
@@ -310,7 +257,7 @@
                                             </div>
                                             
                                         </div>
-                                        -->
+
                                     </div>
                                 </div>
                             </div>
@@ -352,7 +299,7 @@
                                         </div>
 
                                     </div>
-                                     <!-- skill 2 group 2 -->
+                                     <!-- skill group 2 -->
                                     <div class="skills__group">
 
                                         <div class="skills__data">
@@ -392,51 +339,18 @@
                                     Others skills
                                 </h3>
                                 <div class="skills__box">
-                                    <!-- skill 3 group 1 -->
+                                    <!-- skill group 1 -->
                                     <div class="skills__group">
 
                                         <div class="skills__data">
                                             <i class="ri-checkbox-circle-line"></i>
 
                                             <div>
-                                                <h3 class="skills_name">Figma</h3>
-                                                <span class="skills__level">Intermediary</span>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="skills__data">
-                                            <i class="ri-checkbox-circle-line"></i>
-
-                                            <div>
-                                                <h3 class="skills_name">UX</h3>
-                                                <span class="skills__level">Intermediary</span>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="skills__data">
-                                            <i class="ri-checkbox-circle-line"></i>
-
-                                            <div>
-                                                <h3 class="skills_name">CANVA</h3>
-                                                <span class="skills__level">Intermediary</span>
-                                            </div>
-                                            
-                                        </div>
-
-                                    </div>
-                                     <!-- skill 3 group 2 -->
-                                    <div class="skills__group">
-
-                                        <div class="skills__data">
-                                            <i class="ri-checkbox-circle-line"></i>
-
-                                            <div>
-                                                <h3 class="skills_name">Illustrator</h3>
+                                                <h3 class="skills_name">HTML</h3>
                                                 <span class="skills__level">Basic</span>
                                             </div>
                                             
                                         </div>
-                                        <!--
                                         <div class="skills__data">
                                             <i class="ri-checkbox-circle-line"></i>
 
@@ -455,13 +369,45 @@
                                             </div>
                                             
                                         </div>
-                                        -->
+
+                                    </div>
+                                     <!-- skill group 2 -->
+                                    <div class="skills__group">
+
+                                        <div class="skills__data">
+                                            <i class="ri-checkbox-circle-line"></i>
+
+                                            <div>
+                                                <h3 class="skills_name">HTML</h3>
+                                                <span class="skills__level">Basic</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="ri-checkbox-circle-line"></i>
+
+                                            <div>
+                                                <h3 class="skills_name">CSS</h3>
+                                                <span class="skills__level">Basic</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="ri-checkbox-circle-line"></i>
+
+                                            <div>
+                                                <h3 class="skills_name">JavaScript</h3>
+                                                <span class="skills__level">Basic</span>
+                                            </div>
+                                            
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     <!--YouTube-->
-                        <div class="projects__content grid" data-content id="youtube">
+                        <div class="projects__content grid" data-content id="shop">
                             <!-- estrutura para o artigo -->
                             <!--
                                 <article class="projects__card">
@@ -480,7 +426,7 @@
                             -->
                             <!--artigo 1-->
                             <article class="projects__card">
-                                <img src="assets/img/padrao.jpg" alt="" class="projects__img">
+                                <img src="./assets/img/padrao.jpg" alt="" class="projects__img">
 
                                 <div class="projects__modal">
                                     <div>
@@ -493,6 +439,17 @@
                                 </div>
                             </article>
                         </div>
+                    <!--Sobre mim-->
+                    <div class="filters__active" data-content id="faq">
+                        <div class="">
+                            <ul class="Cabecalho">
+                                <h3>Sobre mim...</h3>
+                            </ul>
+                            <ul class="text_faq">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cum. Quae iure fuga consectetur itaque corrupti assumenda, ut ratione illo delectus fugit! Fuga, aliquid vel ipsam necessitatibus fugit error sequi.</p>
+                            </ul>
+                        </div>
+                    </div>                     
                 </div>
             </section>
         </main>
@@ -504,10 +461,10 @@
             <br>
         </footer>
         <!---->
-        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="./assets/js/scrollreveal.min.js"></script>
         <!--SCROLL REVEALS-->
 
         <!--SCRIPT JS-->
-        <script src="assets/js/main.js"></script>
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>
