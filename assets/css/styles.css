@@ -383,6 +383,197 @@ body.dark-theme{
     border-radius: 0rem 0rem .75rem .75rem ;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* BORDER STYLES */
+
+.styleborder{
+    border: 1px dashed var(--first-color);
+    padding: 1.375rem;
+    border-radius: .15rem .15rem .15rem .15rem ;
+    margin-bottom: 10px;
+}
+
+.styleborder2{
+    border: 1px dashed #59f87c;
+    padding: 1.375rem;
+    border-radius: .15rem .15rem .15rem .15rem ;
+    margin-bottom: 10px;
+}
+
+.styleborder3{
+    border: 0px dashed var(--first-color);
+    padding: 1.375rem;
+    border-radius: .15rem .15rem .15rem .15rem ;
+    margin-bottom: 10px;
+}
+
+/* GRID 2 */
+
+.style_grid_2x1 {
+    display: grid;
+    grid-template-columns: 1.2fr 1.4fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-auto-flow: row;
+}
+
+.Resultado_2x1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.Codigo_2x1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+/* GRID 3 */
+
+.style_grid_3x1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-auto-flow: row;
+}
+
+.Resultado_3x1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.Codigo_3x1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.Extra_3x1 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+/* GRID 4 */
+
+.style_grid_4x1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-auto-flow: row;
+}
+
+.Resultado_4x1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.Codigo_4x1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.Extra1_4x1 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.Extra2_4x1 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+/* GRID 5 */
+
+.style_grid_5x1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-auto-flow: row;
+}
+
+.Resultado_5x1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.Codigo_5x1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.Extra1_5x1 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.Extra2_5x1 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.Extra3_5x1 {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+/* GRID 6 */
+
+.style_grid_6x1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-auto-flow: row;
+}
+
+.Resultado_6x1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.Codigo_6x1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.Extra1_6x1 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.Extra2_6x1 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.Extra3_6x1 {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+.Extra4_6x1 {
+    grid-column: 6 / 7;
+    grid-row: 1 / 2;
+}
+
+
 /* PROJECTS */
 
 .projects__card{
@@ -623,4 +814,43 @@ body.dark-theme{
         justify-content: center;
         column-gap: 3rem;
     }
+}
+
+
+/* Estilos do botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    
+}
+
+.whatsapp-float a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none; /* Remover sublinhado do link */
+}
+
+.whatsapp-icon {
+    color: white;
+    font-size: 35px;
+}
+
+.whatsapp-float:hover {
+    background-color: #20c354;
+    cursor: pointer;
+}
+
+#ICONEWHATSAPP{
+    font-size: 36px;
+    color: #f0f0f0;
 }
