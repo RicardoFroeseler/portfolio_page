@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FAVICON -->
     <link rel="stylesheet" href="">
-    <!-- REMIX ICONS -->
+    <!-- ICONS -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/whatsapp-style.css">
     <!-- TITLE -->
     <title>Portfolio website - Ricardo Froeseler</title>
 </head>
@@ -485,17 +487,31 @@
             </span>
             <br>
         </footer>
+        
         <!-- Botão flutuante do WhatsApp -->
-        <div class="whatsapp-float">
-            <a href="https://wa.me/5531985266186" target="_blank">
-                <i id="ICONEWHATSAPP" class="ri-whatsapp-line"></i>
-            </a>
+    <div class="whatsapp-float" onclick="openPopup()">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    </div>
+
+    <!-- Modal (popup) de mensagem do WhatsApp -->
+    <div id="whatsappModal" class="whatsapp-popup">
+        <div class="whatsapp-popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3>Envie sua mensagem</h3>
+            <textarea id="whatsappMessage" placeholder="Digite sua mensagem..." rows="4"></textarea>
+            <button onclick="sendMessage()">Enviar</button>
         </div>
+    </div>
+
+    
+    
         <!---->
         <script src="./assets/js/scrollreveal.min.js"></script>
         <!--SCROLL REVEALS-->
 
         <!--SCRIPT JS-->
         <script src="./assets/js/main.js"></script>
+        <!--SCRIPT WHATSAPP-->
+        <script src="./assets/js/whatsapp-script.js"></script>
     </body>
 </html>

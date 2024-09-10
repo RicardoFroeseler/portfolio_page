@@ -1,0 +1,101 @@
+/* Estilos do botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.whatsapp-icon {
+    color: white;
+    font-size: 35px;
+    margin-top: 12px;
+}
+
+/* Estilos do popup no canto inferior direito */
+.whatsapp-popup {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+
+    /* Transição suave com opacidade e escala */
+    opacity: 0;
+    transform: scale(0.9); /* Inicialmente reduzido */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Quando o popup é exibido */
+.whatsapp-popup.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1); /* Retorna ao tamanho normal */
+}
+
+/* Conteúdo do popup */
+.whatsapp-popup-content {
+    padding: 15px;
+}
+
+.whatsapp-popup h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Ajustar o campo de texto para ficar dentro do modal corretamente */
+textarea {
+    width: calc(100% - 20px); /* Subtraímos o padding interno do modal para evitar o estouro */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Garante que o padding e as bordas sejam incluídos no tamanho total */
+}
+
+
+/* Botão de enviar */
+button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 93%;
+}
+
+button:hover {
+    background-color: #20c354;
+}
+
+/* Botão de fechar o popup */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+
+
